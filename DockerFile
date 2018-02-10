@@ -1,0 +1,33 @@
+# Pull base images
+FROM resin/raspberrypi3-python:3.6.1
+
+# Install requests library (sourced from https://pypi.python.org/pypi/requests)
+WORKDIR /tmp/python-packages/requests
+ADD requests/requests-2.18.4.tar.gz .
+WORKDIR requests-2.18.4
+RUN python3 setup.py install
+
+# Install twitter library (sourced from http://mike.verdone.ca/twitter)
+WORKDIR /tmp/python-packages/twitter
+ADD twitter/twitter-1.18.0.tar.gz .
+WORKDIR twitter-1.18.0
+RUN python3 setup.py install
+
+# Install python-dateutil (sourced from https://labix.org/python-dateutil)
+WORKDIR /tmp/python-packages/dateutil
+ADD dateutil/python-dateutil-2.0.tar.gz .
+WORKDIR python-dateutil-2.0
+RUN python3 setup.py install
+
+# Install C-Gate Monitor scripts
+WORKDIR /python/cgate-monitor
+#COPY cbus/*.ini /python/cgate-monitor/
+COPY cbus/*.py /python/cgate-monitor/
+
+# Install other scripts
+WORKDIR /python/utilities
+COPY utilities/*.py /python/utilities/
+
+WORKDIR /python/cgate-monitor
+ENTRYPOINT ["/usr/local/bin/python3 cgate_monitor.py"]
+
