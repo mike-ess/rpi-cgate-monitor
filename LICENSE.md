@@ -37,5 +37,8 @@ Sourced from https://labix.org/python-dateutil and is made available under the [
 ## requests
 Sourced from https://pypi.python.org/pypi/requests and is made available under the [Apache 2.0 Licence](https://www.apache.org/licenses/LICENSE-2.0) .
 
+## requests-oauth
+Sourced from https://pypi.org/project/requests-oauthlib and is made available under the [Apache 2.0 Licence](https://www.apache.org/licenses/LICENSE-2.0) .
+
 ## twitter
 Sourced from http://mike.verdone.ca/twitter and is made available under the [MIT Licence](https://github.com/sixohsix/twitter/blob/master/LICENSE) .
