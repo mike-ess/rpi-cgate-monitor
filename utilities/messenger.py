@@ -1,5 +1,3 @@
-from config_ini import ConfigIni
-
 import twitter_config
 import email_config
 

@@ -3,7 +3,6 @@ sys.path.append("../utilities")
 
 import cbus_config
 
-from config_ini import ConfigIni
 import cgate_client
 import messenger
 import string
