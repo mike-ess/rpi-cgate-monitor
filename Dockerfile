@@ -30,4 +30,5 @@ RUN chmod 755 /python/cgate-monitor.sh
 
 WORKDIR /python
 ENTRYPOINT ["/python/cgate-monitor.sh"]
+#ENTRYPOINT ["bash"]
 
