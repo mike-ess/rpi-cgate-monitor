@@ -29,6 +29,10 @@ COPY cgate-monitor.sh /python
 RUN chmod 755 /python/cgate-monitor.sh
 
 WORKDIR /python
+
+# Proper Entrypoint
 ENTRYPOINT ["/python/cgate-monitor.sh"]
-#ENTRYPOINT ["bash"]
+
+# Debugging Entrypoint
+# ENTRYPOINT ["bash"]
 
