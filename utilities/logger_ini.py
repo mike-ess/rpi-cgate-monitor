@@ -95,8 +95,3 @@ if __name__ == "__main__":
     logger.warn ("Warning statement.")
     logger.info ("Info statement.")
     logger.debug("Debug statement.")
-    
-    
-
-
-    
