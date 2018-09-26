@@ -1,12 +1,7 @@
-# rpi-ser2sock
+# rpi-cgate-monitor
 
-A Docker image, intended for running ser2sock utility on a Raspberry Pi.
-
-The ser2sock utility allows sharing of a serial device over a TCP/IP network. 
-
-Currently this contains a binary for ser2sock that was built in February 2018 on a Raspberry Pi Model 3B running Raspbian Stretch. Code for the build was downloaded from GitHub.
+A Docker image, intended for running software that monitors a running Clipsal C-Gate server, and can perform custom actions based on events in the home (e.g. send a push notification to the home owner when the alarm is armed or disarmed).
 
 ## Authors
 
-* **Nu Tech Software Solutions, Inc.** - *Created ser2sock software* - [nutechsoftware/ser2sock](https://github.com/nutechsoftware/ser2sock)
-* **Mike Ess** - *Created code for creating a Docker Image* - Get the built image at https://hub.docker.com/r/mikeess/rpi-ser2sock/
+* **Mike Ess** - *Created all code.* - Get the built image at https://hub.docker.com/r/mikeess/rpi-cgate-monitor/
