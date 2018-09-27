@@ -31,14 +31,8 @@ For more information, please refer to (http://unlicense.org/)
 
 Each of the dependant Python packages are separately licensed:
 
-## dateutil
-Sourced from https://labix.org/python-dateutil and is made available under the [Simplified BSD Licence](https://opensource.org/licenses/BSD-2-Clause) .
-
 ## requests
 Sourced from https://pypi.python.org/pypi/requests and is made available under the [Apache 2.0 Licence](https://www.apache.org/licenses/LICENSE-2.0) .
 
 ## requests-oauth
 Sourced from https://pypi.org/project/requests-oauthlib and is made available under the [Apache 2.0 Licence](https://www.apache.org/licenses/LICENSE-2.0) .
-
-## twitter
-Sourced from http://mike.verdone.ca/twitter and is made available under the [MIT Licence](https://github.com/sixohsix/twitter/blob/master/LICENSE) .
