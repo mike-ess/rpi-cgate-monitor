@@ -87,7 +87,7 @@ class CGateMonitor:
             # Get key information from the CBus event
             group_index = event.find(self.cbus_project_id)
             space_index = event.find(" ", group_index)
-            group_number = event[group_index + 17 : space_index]
+            group_number = event[group_index + len(self.cbus_project_id) : space_index]
             group_name = self.get_group_name(group_number)
             unit_index = event.find("#sourceunit=")
             space_index = event.find(" ", unit_index)
